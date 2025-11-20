@@ -1,123 +1,90 @@
 ---
 layout: default
 ---
+# Overview
+This anontated bibliography represents my final project for GEOG 560 - Introduction to Geographic Information Science, which was completed during the Fall 2025 term.
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Author: Kate Thornhill, Graduate Student at Oregon State University | College of Earth, Oceans, and Atmospheric Sciences
+Contact info: [thornhik@oregonstate.edu](mailto:thornhik@oregonstate.edu])
 
-[Link to another page](./another-page.html).
+# Introduction
 
-There should be whitespace between paragraphs.
+As I researched data centers and their impacts on rural communities, I kept thinking about how these massive digital infrastructures are reshaping American landscapes in ways most people don't see or understand. The sources I've gathered here span critical geography, environmental justice reporting, technical public health research, and industry perspectives. Together, they reveal how data centers function as what some scholars call "computational parasites", extracting resources from specific places to produce digital goods consumed elsewhere, often with profound consequences for the communities hosting them. Throughout this bibliography, I focus on how each source informs GIS-based spatial analysis, since I believe mapping these patterns is essential for understanding and addressing the uneven geography of digital infrastructure.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+**Alvarez Leon, L.F. (2024). AI and Global Climate Change: The political economy of data and energy in geographic perspective. Geo: Geography and Environment, 11(1).** [**https://rgs-ibg.onlinelibrary.wiley.com/doi/10.1002/geo2.134**](https://rgs-ibg.onlinelibrary.wiley.com/doi/10.1002/geo2.134)
 
-# Header 1
+This commentary argues that geography as a discipline is uniquely positioned to analyze how data and energy inequalities in AI applications intertwine with climate impacts. Alvarez Leon deploys the "computational parasites" concept, showing how AI applications "enroll themselves within historical and spatially situated socio-ecologies and processes of accumulation". In other words, data centers materially embed in specific geographic contexts with uneven environmental and social consequences. The piece hits hard with concrete examples like training ChatGPT consuming energy equivalent to 1,000 US households annually.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+For my GIS work on rural data centers, this provides critical conceptual scaffolding. The "computational parasites" framework tells me I should create overlay analyses showing data center locations against energy infrastructure networks, water source proximity, and community vulnerability indices. I'm thinking about mapping these relationships explicitly: overlaying data center locations with transmission line networks, power generation facilities, water availability zones, and socioeconomic indicators to visualize how "computational parasitism" manifests spatially. This helps explain why data centers cluster in particular rural areas. It's not random but reflects these communities' vulnerable positions within capital accumulation processes.
 
-## Header 2
+**Brodie, P. (2023). Data infrastructure studies on an unequal planet. Big Data & Society, 10(1).** [**https://doi.org/10.1177/20539517231182402**](https://doi.org/10.1177/20539517231182402)
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+Brodie examines data centers as infrastructures of multinational digital capitalism, analyzing how their energy demands reproduce planetary environmental inequalities through Ireland as a case study. The framework is fundamentally spatial. It examines how data infrastructure produces uneven geographic relationships between resource-rich peripheries and data-consuming cores. For my GIS work, this suggests I need to create spatial visualizations showing where data is consumed (urban centers) versus where infrastructure is located (rural areas with cheap power).
 
-### Header 3
+The "data counter-power" concept seems particularly valuable for mapping community resistance patterns using GIS. I could geocode community advocacy groups, map ordinances restricting data center development, and analyze spatial relationships between resistance activities and environmental justice indicators using tools like hot spot analysis. While Brodie doesn't provide quantitative spatial data or GIS methods directly, the theoretical lens helps me understand what patterns my maps might reveal about how environmental, economic, and social impacts interconnect through spatial inequality.
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+**Burrington, I. (2016, January 8). Where Are Amazon's Data Centers? Atlantic.** [**https://web.archive.org/web/20251006092408/https://www.theatlantic.com/technology/archive/2016/01/amazon-web-services-data-center/423147/**](https://web.archive.org/web/20251006092408/https://www.theatlantic.com/technology/archive/2016/01/amazon-web-services-data-center/423147/)
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+This investigative essay documents Burrington's journey to locate AWS data centers in Northern Virginia, revealing corporate opacity around their locations. Her detective work using Google Maps, municipal documents, and tax records to map facilities demonstrates manual spatial analysis that could be systematized in GIS. She reveals data centers embedded within everyday suburban landscapes: industrial parks adjacent to residential neighborhoods, retail centers, and community facilities.
 
-#### Header 4
+From a GIS perspective, this shows me that researching data centers requires integrating multiple spatial datasets: property records (county assessor shapefiles), subsidiary company addresses (which can be geocoded), utility records showing high-capacity connections, and building permit data. I should conduct an analysis using buffer zones around data centers to identify nearby schools, residential areas, and community facilities. Burrington's methods also suggest mapping fiber optic network trunk lines and Internet exchange points to analyze how backbone infrastructure proximity influences siting patterns. The 2016 publication date is limiting, but her investigative approach directly informs my GIS data collection strategies.
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+**Carr, C., Bast, D., Madron, K., & Syrus, A. M. (2022). Mapping the clouds: The matter of data centers. Journal of Maps, 18(1), 106–113.** [**https://doi.org/10.1080/17445647.2022.2088304**](https://doi.org/10.1080/17445647.2022.2088304)
 
-##### Header 5
+This map-making study visualizes data center geographies, challenging "cloud" terminology that obscures physical realities. The authors use cartographic visualization to reveal four spatial trends: hyperscale facilities clustering near large waterways, data centers stressing local administrations as facility scale increases, state-led development patterns, and multi-level governance competition. This is directly relevant to my GIS work because it's explicitly about cartographic methodology—demonstrating how mapping reveals patterns invisible in qualitative accounts alone.
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+Each trend the authors identify suggests specific GIS techniques I should use. For water proximity, I need to calculate distances from data centers to major rivers and aquifers, plus mapping water withdrawal permits. For governance stress, I'm thinking about creating graduated symbol maps where data center size is proportional to symbol size, overlaid with choropleth maps showing community fiscal capacity. The multi-level governance finding suggests I need hierarchical administrative boundaries in my GIS database to examine policy variations across county, state, and regional scales. This article proves that cartographic analysis is essential for understanding data center geography—spatial visualization makes material what corporate interests prefer to keep abstract.
 
-###### Header 6
+**Cooke, K. (2025, September 8). The Hidden Complexity of Data Center Siting. Industry Blogs.** [**https://www.esri.com/en-us/industries/blog/articles/hidden-complexity-data-center-sites**](https://www.esri.com/en-us/industries/blog/articles/hidden-complexity-data-center-sites)
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+This investigative feature examines Virginia's Digital Gateway project, the world's largest proposed data center campus at 23 million square feet. It documents how "by right" zoning laws enabled data center proliferation in "Data Center Alley," with facilities now adjacent to schools, cemeteries, and residential areas. The specific impacts include electricity for 750,000 homes and up to 5 million gallons of water daily. The concrete spatial details specific neighborhoods, Tippet's Hill Cemetery, proximity to Manassas National Battlefield can be geocoded and mapped.
 
-### There's a horizontal rule below this.
+For GIS analysis, this suggests several methodologies: mapping "by right" industrial zones to examine how data centers cluster in areas with permissive zoning, creating analysis showing how many households could be served by those resources instead (visualizing opportunity costs spatially), and conducting cultural resource proximity analysis measuring distances to historic sites. I could also map the Virginia Data Center Reform Coalition's advocacy activities geocoding testimony locations and member addresses to understand spatial patterns of resistance. While journalistic rather than peer-reviewed, it provides ground-truth details that help me ensure my spatial data aligns with lived community experiences.
 
-* * *
+**Han, Y., Wu, Z., Li, P., Wierman, A., & Ren, S. (2024). The Unpaid Toll: Quantifying and Addressing the Public Health Impact of Data Centers. arXiv preprint arXiv:2412.06288.** [**https://arxiv.org/abs/2412.06288**](https://arxiv.org/abs/2412.06288)
 
-### Here is an unordered list:
+This technical paper introduces a methodology for modeling lifecycle pollutant emissions from AI data centers across three scopes: backup generators, electricity consumption, and chip manufacturing. Using EPA's COBRA screening model and atmospheric dispersion modeling, the authors demonstrate that training Llama-3.1 scale models produces air pollutants, PM2.5, sulfur dioxide, nitrogen oxides, equivalent to over 10,000 car round trips between Los Angeles and New York. The projected costs are staggering. U.S. data center public health costs could reach \$20 billion annually by 2030. What really struck me is the geographic inequity the household health burdens in economically disadvantaged communities can be 200 times higher than in less-impacted areas.
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+The research also reveals that air pollution crosses state lines. Northern Virginia data centers alone create \$190-\$260 million in annual regional health costs across seven states, which fundamentally changes how I need to think about mapping impacts. For my GIS research on rural data centers, this shows I can't map point locations. I need to account for how pollutants travel across boundaries, meaning rural data center impacts extend far beyond host communities. While the atmospheric dispersion modeling, they use is specialized software, the findings tell me what matters spatially. I need to overlay data center locations with socioeconomic vulnerability indices, existing pollution burdens from EPA's EJSCREEN, and population density. The disparity means my environmental justice analysis must track both direct impacts (the facilities themselves) and indirect impacts (power plants serving them) on human populations.
 
-### And an ordered list:
+**Kaiser, C. (2025, September 18). Why Data Centers are Driving Rural Land Demand: Location Requirements Explained. LandApp.** [**https://www.landapp.com/post/why-data-centers-are-driving-rural-land-demand-location-requirements-explained**](https://www.landapp.com/post/why-data-centers-are-driving-rural-land-demand-location-requirements-explained)
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+This industry report examines why data centers increasingly target rural areas, focusing on location requirements and development criteria. The article explains that rural areas sit near major power generation facilities and transmission lines, making them attractive for data centers requiring electricity equivalent to small cities, while offering lower land costs and space for expansion at a fraction of urban prices. In Q2 2025, U.S. data center energy consumption hit 224 TWh, with capital expenditures rising 17.7% and hyperscaler data centers investing over \$300 billion, leveraging state incentives to boost rural development in Ohio, Georgia, and Texas. The report details specific siting criteria: proximity to renewable energy sources, access to fiber optic networks, favorable regulatory environments, and lower natural disaster risks compared to urban areas.
 
-### And a nested list:
+I'm including this source because understanding the industry's perspective helps me recognize what developers prioritize versus what communities’ experience—and these priorities can be mapped spatially to predict future development patterns. As an industry publication, the piece presents data center development positively, emphasizing economic benefits while minimizing environmental concerns. But for GIS purposes, it reveals the spatial logic developers use, which I can then critically examine.
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+**Kollar, A., & Grady, C. (2025). The relationship between data centers and the climate is a systems challenge: A spatial analysis of United States data centers. Environmental Research Communications, 7(11), 111005.** [**https://doi.org/10.1088/2515-7620/ae193a**](https://doi.org/10.1088/2515-7620/ae193a)
 
-### Small image
+This study provides national-scale spatial analysis of data center environmental impacts, explicitly using GIS methods to map facilities against climate zones, power grid characteristics, and water availability. The authors use overlay analysis to intersect data center locations with Köppen climate zones (revealing cooling requirement variations), map power grid carbon intensity by region, and examine water availability using USGS water stress indices. This approach reveals geographic patterns invisible in aggregate analyses. The multi-criteria spatial framework is what I'm taking methodologically. Rather than examining data centers alone, they demonstrate the necessity of analyzing multiple environmental systems simultaneously through GIS.
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+**Lally, N., Kay, K., & Thatcher, J. (2022). Computational parasites and hydropower: A political ecology of Bitcoin mining on the Columbia River. Environment and Planning E: Nature and Space, 5(1), 18–38.** [**https://doi.org/10.1177/2514848619867608**](https://doi.org/10.1177/2514848619867608)
 
-### Large image
+This political ecology analysis examines Bitcoin mining's impacts on Chelan County, Washington's Columbia River hydropower system. The authors argue that "the dams of Chelan County, its watershed and fish, the electrical grid and the laborers who maintain it, and cleared land with warehouses filled with computers, have all been enrolled as part of the decentralized digital infrastructure of Bitcoin". They frame Bitcoin mining as "computational parasites" that extract material resources from specific places to produce digital goods consumed elsewhere. The study employs political ecology with spatial analysis of material geographies, demonstrating that "while popular accounts report the massive scale of energy Bitcoin consumes, in practice, the material geographies of Bitcoin are highly uneven and intertwined with specific infrastructural, ecological, and economic systems". Only 15% of Chelan County's hydropower serves local customers, with the remainder exported or consumed by mining. This spatial analysis reveals how rural communities provide infrastructure for distant beneficiaries while bearing local environmental costs including impacts on endangered salmon and Indigenous treaty rights. Though focused on Bitcoin rather than AI data centers, this article provides essential theoretical frameworks for analyzing digital infrastructure in rural contexts. The "computational parasite" concept and attention to uneven geographic power relations directly inform critical GIS approaches to data center research.
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+**Mahoney, A. (2025, February 25). America’s Digital Demand Threatens Black Communities with More Pollution. Capital B News.** [**https://capitalbnews.org/ai-data-centers-south-carolina-black-communities/**](https://capitalbnews.org/ai-data-centers-south-carolina-black-communities/)
 
+This investigative report examines environmental racism in South Carolina's data center expansion, documenting how AI infrastructure development disproportionately impacts Black communities. Meta and Google pledged over \$4 billion for new South Carolina data centers, with the state proposing to reopen power plants in rural Black communities, including converting a former coal plant in Colleton County to gas-fired generation. The article reveals that "if you mapped all of the existing power plants in South Carolina, they'd follow the old path of one of the foundational pillars of the American economy through South Carolina: plantations and enslaved labor". The article employs spatial mapping to demonstrate environmental injustice patterns, showing how power plant locations overlay historical plantation geographies. This mapping methodology reveals systemic patterns invisible without spatial analysis. Black communities "use the least amount of electricity yet experience the highest energy burden," while data centers will drive 70% of South Carolina's increased energy use. The piece documents concrete impacts: Google's Berkeley County data center uses electricity equivalent to 300,000 homes while powered by more fossil fuels than any other Google facility nationwide, and utility bills are expected to increase \$40-50 monthly due to data centers. The article demonstrates how GIS-based spatial analysis reveals environmental racism patterns, making it essential for understanding how data center siting perpetuates historical inequities. Its strength lies in connecting spatial patterns to historical injustice and present-day economic burden, providing a model for GIS research on distributional equity in rural data center development.
 
-### Definition lists can be used with HTML syntax.
+**Oregon Data Centers—137 Facilities from 24 Operators. (2025). Retrieved November 7, 2025, from** [**https://www.datacentermap.com/usa/oregon/**](https://www.datacentermap.com/usa/oregon/)
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+This industry database provides a comprehensive inventory of Oregon's data center infrastructure, listing 137 facilities from 24 operators across 13 markets in Oregon. The database reveals significant geographic clustering: Boardman hosts 30 facilities (primarily Amazon AWS campuses), Prineville contains 15 facilities (dominated by Apple and Meta), Portland metropolitan area has 32 facilities from 9 operators, and Umatilla hosts 18 facilities including Amazon AWS and Sabey Data Centers planned 100+ MW campus. Rural markets like Boardman, Prineville, The Dalles, and Umatilla collectively represent the majority of Oregon's hyperscale capacity. This database is valuable for GIS spatial analysis, providing specific addresses, facility counts by market, and operator identifications that enable mapping of data center distribution patterns. It demonstrates the rural concentration of hyperscale facilities versus urban distribution of smaller colocation centers. The data reveals Oregon's emergence as a major Pacific Northwest data center hub, leveraging cheap hydroelectric power, tax incentives, and temperate climate for cooling efficiency. As an industry directory rather than analytical source, it lacks contextual information about community impacts, resource consumption, or policy frameworks. However, its comprehensive facility-level data makes it essential for quantitative spatial analysis of siting patterns, market concentration, and rural versus urban distribution in Oregon's data center landscape.
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+**Osaka, S. (2023, April 25). A new front in the water wars: Your internet use. The Washington Post.** [**https://www.washingtonpost.com/climate-environment/2023/04/25/data-centers-drought-water-use/**](https://www.washingtonpost.com/climate-environment/2023/04/25/data-centers-drought-water-use/)
 
-```
-The final element.
-```
+This investigative report examines water conflicts between data centers and Western communities facing megadrought conditions. Mesa, Arizona city council member Jenn Duff expressed immediate concern when Meta proposed another data center in the desert city already hosting Google, Apple, and other tech giants: "My first reaction was concern for our water". The article documents how Google's Mesa facility has a permit to use 5.5 million cubic meters of water annually, equivalent to 23,000 Arizonans' yearly consumption, while Microsoft reported 42% of its water came from "areas with water stress" in 2023. The piece employs spatial analysis by examining geographic patterns of water scarcity overlapping with data center siting decisions. The article identifies a critical spatial mismatch: "tech companies put many of these centers in areas where power is cheap and low-carbon—such as Arizona or other states with plentiful solar or wind power—to help meet their own climate targets. Water in those regions is scarce"<https://www.datacenterknowledge.com/sustainability/a-new-front-in-the-water-wars-your-internet-use>. This geographic contradiction connects to renewable energy abundance in arid regions versus water availability in higher-carbon areas. It demonstrates how GIS mapping of resource availability, climate conditions, and infrastructure location reveals systemic planning failures. The article's strength lies in documenting concrete community resistance and policy responses, with Chandler, Arizona passing ordinances restricting water-intensive businesses that don't create many jobs, effectively deterring data centers. Its focus on spatial resource conflicts provides essential context for GIS analysis of sustainable data centers siting in water-stressed rural regions.
+
+**Ren, S., & Wierman, A. (2025). Mitigating the Public Health Impacts of AI Data Centers. Harvard Business Review.** [**https://hbr.org/2025/11/mitigating-the-public-health-impacts-of-ai-data-centers**](https://hbr.org/2025/11/mitigating-the-public-health-impacts-of-ai-data-centers)
+
+This practitioner-oriented article introduces the concept of "health-informed AI" to address the largely overlooked public health burden of AI data centers, estimating annual health costs from air pollution at up to \$20 billion in the United States by 2028. Building on the authors' technical research published in arXiv ([Han et al., 2024](https://arxiv.org/abs/2412.06288)), the article argues that data center expansion creates significant respiratory health consequences through fine particulate matter and other air pollutants from power generation and backup diesel generators. The authors demonstrate that training a large language model at Meta's Llama-3.1 scale produces air pollution equivalent to over 10,000 car round trips between Los Angeles and New York City. The article's key contribution is proposing demand-side mitigation strategies that account for spatial and temporal variations in health impacts, particularly since fossil fuels remain embedded in energy infrastructure despite renewable advances. Ren and Wierman advocate for requiring tech companies to report air pollutants criteria, compensate disproportionately affected low-income communities near power plants, and strategically locate AI computing tasks in regions with lower public health impacts. This "health-informed AI" approach extends beyond technology companies' own data centers to cloud-based AI deployments.
+
+For GIS research on rural data centers, this article provides critical evidence that environmental impacts extend beyond carbon emissions and water consumption to include immediate public health consequences measurable in monetary terms. The spatial dimension is central—health burdens are geographically uneven, with per-household impacts potentially 200 times higher in disadvantaged communities. This suggests GIS analysis should map not just data center locations but also proximity to vulnerable populations, power generation sources, and backup generator installations. The work connects data center siting decisions to environmental justice concerns and provides EPA-validated methodology for quantifying localized health costs, making it valuable for spatial analysis of cumulative community impacts from rural data center development.
+
+**Samayoa, M. (2025, June 6). Oregon Legislature passes 'POWER Act,' targeting industrial energy users like data centers. Oregon Public Broadcasting.** [**https://www.opb.org/article/2025/06/05/oregon-data-centers-cryptocurrency-business-environment-power-electricity/**](https://www.opb.org/article/2025/06/05/oregon-data-centers-cryptocurrency-business-environment-power-electricity/)
+
+This news article reports on Oregon's House Bill 3546 (POWER Act), which creates a new regulatory classification for data centers and industrial energy users consuming over 20 megawatts. The legislation addresses cost inequities where industrial users pay approximately 8 cents per kilowatt hour while residential customers pay nearly 20 cents. Portland General Electric saw 95% growth in industrial demand since 2016 (primarily data centers) versus only 3.5% residential growth, equivalent to adding 162,400 families to PGE's system. The Act requires 10-year contracts with minimum payments and transmission infrastructure costs. Supported by 50+ climate groups and the governor, the legislation responds to record disconnections of 32,000 PGE customers in 2024 amid rising costs partly from data center grid connections. Oregon has 131 data centers. Opponents argued the law could deter development, noting Oregon would be first state creating a separate rate class for specific industries. For GIS research on rural data centers, this provides a state-level regulatory response case study. The legislation demonstrates how data center growth creates geographic cost inequities—utilities invest in infrastructure benefiting corporations while residential ratepayers subsidize expansion. The 20-megawatt threshold and contract requirements offer regulatory metrics for spatial analysis. The article reveals tension between economic development and consumer protection, suggesting GIS analysis should map data center locations alongside utility territories, rate structures, and disconnection patterns to understand community cost burdens.
+
+**World Economic Forum. (2025). These companies are using data centres to heat cities. World Economic Forum. https://www.weforum.org/stories/2025/06/sustainable-data-centre-heating/**
+
+This article examines waste heat recovery from data centers as a mitigation strategy, particularly in Europe where district heating networks enable redirection of thermal byproducts to homes and businesses. Europe, especially Nordic countries, leads adoption while the U.S. lags despite having the most data centers globally. Stockholm Data Parks aims for zero wasted heat, with 10,000 apartments currently receiving data center heat. Finland's Nebius facility in Mäntsälä recovers 20,000 MWh annually, enough for 2,500 homes, and Microsoft's Helsinki region project will become "the world's largest scheme to recycle waste heat," heating Espoo and two neighboring municipalities. Google's Hamina data center provides 80% of the local district heating network's annual demand. Ireland's Tallaght scheme saved 1,100 tonnes of CO2 in its first year using Amazon data center heat, and London plans to heat 9,000 homes via local data centers. The article notes each ChatGPT query consumes 0.14 kilowatt-hours (equivalent to 14 LED bulbs for an hour), with data centers projected to consume 3% of global electricity by 2030. While acknowledging waste heat recovery isn't a complete solution, the Forum's white paper *Artificial Intelligence's Energy Paradox* positions it as crucial for balancing AI benefits with climate impacts, noting AI can also optimize energy systems.
+
+For GIS research on rural data centers, this demonstrates that environmental impacts aren't uniform. Mitigation potential varies by geographic context. Nordic success relies on existing district heating infrastructure and cold climates; conditions often absent in U.S. rural areas. This suggests GIS analysis should map proximity to potential heat customers (residential, agricultural, industrial) and existing thermal infrastructure to identify where waste heat recovery is feasible versus locations where heat remains pure externality. The contrast between European integration and U.S. patterns reveals how regulatory frameworks and infrastructure legacy shape whether data centers function as community assets or purely extractive facilities, a critical consideration for rural siting policy.
