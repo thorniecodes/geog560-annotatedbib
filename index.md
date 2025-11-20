@@ -5,7 +5,8 @@ layout: default
 This anontated bibliography represents my final project for GEOG 560 - Introduction to Geographic Information Science, which was completed during the Fall 2025 term.
 
 Author: Kate Thornhill, Graduate Student at Oregon State University | College of Earth, Oceans, and Atmospheric Sciences
-Contact info: [thornhik@oregonstate.edu](mailto:thornhik@oregonstate.edu])
+
+Contact Info: [thornhik@oregonstate.edu](mailto:thornhik@oregonstate.edu])
 
 # Introduction
 
