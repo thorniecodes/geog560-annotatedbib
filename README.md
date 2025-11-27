@@ -1,3 +1,12 @@
+# GEOG 560 Annotated Bibliography
+This repository represents my final project for GEOG 560 - Introduction to Geographic Information Science. The assignment required all students to complete an annotated bibliography for a topic of their choosing, as long as it related to GIS and course content.
+
+I chose the research topic: Spatial perspectives on data center development in rural communities: Examining environmental, economic, and social impacts through GIS.
+
+Visit [https://thorniecodes.github.io/geog560-annotatedbib/](https://thorniecodes.github.io/geog560-annotatedbib/) to read my work.
+
+-----
+
 # The Minimal theme
 
 [![.github/workflows/ci.yaml](https://github.com/pages-themes/minimal/actions/workflows/ci.yaml/badge.svg)](https://github.com/pages-themes/minimal/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-minimal.svg)](https://badge.fury.io/rb/jekyll-theme-minimal)
