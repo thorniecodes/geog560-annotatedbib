@@ -9,7 +9,9 @@ Author: Kate Thornhill, Graduate Student at Oregon State University | College of
 Contact Info: [thornhik@oregonstate.edu](mailto:thornhik@oregonstate.edu])
 
 # Overview
-As I researched data centers and their impacts on rural communities, I kept thinking about how these massive digital infrastructures are reshaping American landscapes in ways most people don't see or understand. The sources I've gathered here span critical geography, environmental justice reporting, technical public health research, and industry perspectives. Together, they reveal how data centers function as what some scholars call "computational parasites", extracting resources from specific places to produce digital goods consumed elsewhere, often with profound consequences for the communities hosting them. Throughout this bibliography, I focus on how each source informs GIS-based spatial analysis, since I believe mapping these patterns is essential for understanding and addressing the uneven geography of digital infrastructure.
+As I researched data centers and their impacts on rural communities, I kept thinking about how these massive digital infrastructures are reshaping American landscapes in ways most people don't see or understand. The sources I've gathered here span critical geography, environmental justice reporting, technical public health research, and industry perspectives. Together, they reveal how data centers function as what some scholars call "computational parasites", extracting resources from specific places to produce digital goods consumed elsewhere, often with profound consequences for the communities hosting them. Throughout this bibliography, I focus on how each source informs GIS-based spatial analysis, since mapping these patterns is essential for understanding and addressing the uneven geography of digital infrastructure.
+
+# Annotated Bibliography
 
 **Alvarez Leon, L.F. (2024). AI and Global Climate Change: The political economy of data and energy in geographic perspective. Geo: Geography and Environment, 11(1).** [**https://rgs-ibg.onlinelibrary.wiley.com/doi/10.1002/geo2.134**](https://rgs-ibg.onlinelibrary.wiley.com/doi/10.1002/geo2.134)
 
