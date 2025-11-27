@@ -1,5 +1,5 @@
-# GEOG 560 Annotated Bibliography
-This repository represents my final project for GEOG 560 - Introduction to Geographic Information Science. The assignment required all students to complete an annotated bibliography for a topic of their choosing, as long as it related to GIS and course content.
+# GEOG 560 - Introduction to Geographic Information Science - Annotated Bibliography Final Project
+This repository represents my final project for GEOG 560 - Introduction to Geographic Information Science. The assignment required all students to complete an annotated bibliography of 15 sources on a topic of their choosing, as long as it related to GIS and course content.
 
 I chose the research topic: Spatial perspectives on data center development in rural communities: Examining environmental, economic, and social impacts through GIS.
 
